@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency-converter</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="container">
+    <div>
+        <h1 class="header">
+            Exchange your currency:
+        </h1>
+        <form class="js-form">
+            <fieldset>
+                <legend>
+                    Currency converter:
+                </legend>
+                <p>
+                    <label>
+                        <span class="form__text">
+                            Currency:</span> <select class="form__field" name="currency">
+                            <option value="eur-pln">EUR->PLN</option>
+                            <option value="pln-eur">PLN->EUR</option>
+                            <option value="usd-pln">USD->PLN
+                            </option>
+                            <option value="pln-usd">PLN->USD
+                            </option>
+                            <option value="eur-usd">EUR->USD
+                            </option>
+                            <option value="usd-eur">USD->EUR
+                            </option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__text">
+                            Value:</span>
+                        <input class="form__field js-currency" type="number" min="0" required
+                            placeholder="Input the amount of currency" autofocus>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__text">
+                            Currency rate:</span>
+                        <input class="form__field js-rate" type="number" min="0.0001" step="0.0001" required
+                            placeholder="Input the current rate">
+
+                    </label>
+                </p>
+                <p>
+                    <span class="form__text">
+                        Calculated value:</span> <strong class="js-calculated">N/A</strong>
+                </p>
+                <button class="button">Recalculate your currency</button>
+                <button class="button" type="reset">Clean</button>
+            </fieldset>
+        </form>
+    </div>
+    <footer class="footer">
+        Copyright 2022 by Danon. All rights reserved.
+    </footer>
+</body>
+
+</html>
