@@ -1,5 +1,5 @@
 # currency-converter
-Please take a look my first Currency converter.
+Please take a look at my first Currency converter.
 ## Demo:
 https://danonstinson.github.io/currency-converter/
 
